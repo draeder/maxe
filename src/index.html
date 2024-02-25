@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Container Demo</title>
+</head>
+<body>
+
+<page-container align="flex-start">
+    <page-item id="item1">Item 1</page-item>
+    <page-item id="item2">
+        <h1>Title</h1>
+        <p id="content">Lorem ipsum dolor sit amet...</p>
+    </page-item>
+</page-container>
+
+<script>
+    // Get references to the page items
+    const item1 = document.getElementById("item1");
+    const item2 = document.getElementById("item2");
+
+    // Change the content of the first page item
+    item1.textContent = "Updated Item 1";
+
+    // Change the content of the second page item
+    const content = document.getElementById("content");
+    content.textContent = "New content for the second item";
+</script>
+    
+</body>
+</html>
